@@ -15,7 +15,7 @@ public class SphereObserverImpl implements SphereObserver {
 
     @Override
     public void onSphereChanged(Sphere sphere) {
-        log.info("Sphere changed: {}", sphere);
+        log.info("Notify Observer. Sphere changed: {}", sphere);
         double area = service.calculateSurfaceArea(sphere);
         double volume = service.calculateVolume(sphere);
         SphereParameters parameters = new SphereParameters(area, volume);
