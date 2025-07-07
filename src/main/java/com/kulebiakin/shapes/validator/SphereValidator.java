@@ -2,6 +2,13 @@ package com.kulebiakin.shapes.validator;
 
 public class SphereValidator {
 
+    /**
+     * Examples that match
+     * • 1.0;2.0;3.0;5.0
+     * • 1;2;3;5
+     * • 1 ; 2 ; 3 ; 5.0
+     * • -1.2; 0.0; -3; 10.5
+     */
     private static final String SPHERE_LINE_REGEX = "^\\s*(\\d+(?:\\.\\d+)?)(?:\\s*;\\s*(\\d+(?:\\.\\d+)?)){3}\\s*$";
 
     /**
